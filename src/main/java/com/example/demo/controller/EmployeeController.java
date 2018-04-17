@@ -16,7 +16,7 @@ import com.example.demo.service.IEmpService;
 public class EmployeeController {
 	@Autowired
 	private IEmpService empService;
-
+//get all details
 	@RequestMapping(value="/employees", method=RequestMethod.GET)
 	public @ResponseBody List<Employee> getAllEmp(){
 		  List<Employee> emp =empService.getAllEmp();
